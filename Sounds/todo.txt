@@ -1,0 +1,1 @@
+beep4, beep6 and button9 wave are only here due to a spring bug that's probably fixed in 0.79 or greater. Remove these files when safe to do so as they should be in springcontent.

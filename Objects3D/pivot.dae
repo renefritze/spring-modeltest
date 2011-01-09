@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:249 - Illusoft Collada Exporter v:0.3.162</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file:///home/spliff/.spring/mods/ModelTest.sdd/Objects3D/pivot.blend</source_data>
+		</contributor>
+		<created>2010-12-12T19:20:56.104495</created>
+		<modified>2010-12-12T19:20:56.104512</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="Material-fx" name="Material-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<phong>
+						<emission>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</emission>
+						<ambient>
+							<color>0.40000 0.40000 0.40000 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.80000 0.80000 0.80000 1</color>
+						</diffuse>
+						<specular>
+							<color>0.50000 0.50000 0.50000 1</color>
+						</specular>
+						<shininess>
+							<float>12.5</float>
+						</shininess>
+						<reflective>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</reflective>
+						<reflectivity>
+							<float>0.0</float>
+						</reflectivity>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>0.0</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="Material" name="Material">
+			<instance_effect url="#Material-fx"/>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="chassis-Geometry" name="chassis-Geometry">
+			<mesh>
+				<source id="chassis-Geometry-Position">
+					<float_array count="24" id="chassis-Geometry-Position-array">10.75776 15.41997 -0.00189 10.75776 -17.24326 -0.00189 -10.84225 -17.24325 -0.00189 -10.84224 15.41997 -0.00189 10.75777 15.41996 19.79811 10.75775 -17.24327 19.79811 -10.84225 -17.24325 19.79811 -10.84225 15.41997 19.79811</float_array>
+					<technique_common>
+						<accessor count="8" source="#chassis-Geometry-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="chassis-Geometry-Normals">
+					<float_array count="18" id="chassis-Geometry-Normals-array">0.00000 0.00000 -1.00000 0.00000 -0.00000 1.00000 1.00000 -0.00000 0.00000 -0.00000 -1.00000 -0.00000 -1.00000 0.00000 -0.00000 0.00000 1.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="6" source="#chassis-Geometry-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="chassis-Geometry-Vertex">
+					<input semantic="POSITION" source="#chassis-Geometry-Position"/>
+				</vertices>
+				<triangles count="12">
+					<input offset="0" semantic="VERTEX" source="#chassis-Geometry-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#chassis-Geometry-Normals"/>
+					<p>0 0 1 0 2 0 2 0 3 0 0 0 4 1 7 1 6 1 6 1 5 1 4 1 0 2 4 2 5 2 5 2 1 2 0 2 1 3 5 3 6 3 6 3 2 3 1 3 2 4 6 4 7 4 7 4 3 4 2 4 4 5 0 5 3 5 3 5 7 5 4 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="turret-Geometry" name="turret-Geometry">
+			<mesh>
+				<source id="turret-Geometry-Position">
+					<float_array count="24" id="turret-Geometry-Position-array">29.48775 1.52013 17.07141 29.48775 -1.46182 17.07141 -4.35865 -1.46181 -2.46982 -4.35864 1.52013 -2.46981 28.49776 1.52013 18.78614 28.49774 -1.46182 18.78613 -5.34865 -1.46181 -0.75509 -5.34864 1.52013 -0.75509</float_array>
+					<technique_common>
+						<accessor count="8" source="#turret-Geometry-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="turret-Geometry-Normals">
+					<float_array count="18" id="turret-Geometry-Normals-array">0.50000 0.00000 -0.86603 -0.50000 0.00000 0.86603 0.86603 -0.00000 0.50000 0.00000 -1.00000 -0.00000 -0.86602 0.00000 -0.50000 -0.00000 1.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="6" source="#turret-Geometry-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="turret-Geometry-Vertex">
+					<input semantic="POSITION" source="#turret-Geometry-Position"/>
+				</vertices>
+				<triangles count="12" material="Material">
+					<input offset="0" semantic="VERTEX" source="#turret-Geometry-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#turret-Geometry-Normals"/>
+					<p>0 0 1 0 2 0 2 0 3 0 0 0 4 1 7 1 6 1 6 1 5 1 4 1 0 2 4 2 5 2 5 2 1 2 0 2 1 3 5 3 6 3 6 3 2 3 1 3 2 4 6 4 7 4 7 4 3 4 2 4 4 5 0 5 3 5 3 5 7 5 4 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Cone_003" name="Cone_003">
+			<mesh>
+				<source id="Cone_003-Position">
+					<float_array count="102" id="Cone_003-Position-array">-1.48617 2.05061 -3.22588 -1.30584 1.61115 -3.53821 -1.17185 1.10978 -3.77030 -1.08934 0.56576 -3.91322 -1.06147 0.00000 -3.96147 -1.08933 -0.56576 -3.91322 -1.17185 -1.10978 -3.77030 -1.30584 -1.61115 -3.53821 -1.48617 -2.05061 -3.22588 -1.70590 -2.41126 -2.84530 -1.95658 -2.67925 -2.41110 -2.22859 -2.84428 -1.93996 -2.51147 -2.90000 -1.45000 -2.79435 -2.84428 -0.96003 -3.06637 -2.67925 -0.48890 -3.31705 -2.41126 -0.05470 -3.53678 -2.05061 0.32588 -3.71710 -1.61115 0.63822 -3.85110 -1.10978 0.87030 -3.93361 -0.56576 1.01322 -3.96147 0.00000 1.06147 -3.93361 0.56576 1.01322 -3.85110 1.10978 0.87030 -3.71710 1.61116 0.63821 -3.53678 2.05061 0.32588 -3.31705 2.41126 -0.05470 -3.06636 2.67925 -0.48890 -2.79435 2.84428 -0.96004 -2.51147 2.90000 -1.45000 -2.22859 2.84428 -1.93997 -1.95658 2.67925 -2.41110 -1.70589 2.41126 -2.84530 2.51147 0.00000 1.45000 -2.51147 0.00000 -1.45000</float_array>
+					<technique_common>
+						<accessor count="34" source="#Cone_003-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Cone_003-Normals">
+					<float_array count="192" id="Cone_003-Normals-array">0.73184 0.56796 -0.37660 0.78059 0.42204 -0.46105 0.81417 0.25989 -0.51921 0.83129 0.08775 -0.54886 0.83129 -0.08775 -0.54886 0.81417 -0.25989 -0.51921 0.78059 -0.42204 -0.46105 0.73184 -0.56796 -0.37660 0.66979 -0.69207 -0.26913 0.59682 -0.78957 -0.14275 0.51575 -0.85674 -0.00233 0.42968 -0.89098 0.14675 0.34193 -0.89098 0.29874 0.25586 -0.85674 0.44781 0.17479 -0.78957 0.58824 0.10182 -0.69207 0.71462 0.03977 -0.56796 0.82209 -0.00898 -0.42203 0.90654 -0.04256 -0.25989 0.96470 -0.05968 -0.08775 0.99435 -0.05968 0.08775 0.99435 -0.04256 0.25989 0.96470 -0.00898 0.42204 0.90653 0.03977 0.56797 0.82209 0.10182 0.69207 0.71462 0.17479 0.78957 0.58824 0.25586 0.85674 0.44781 0.34193 0.89098 0.29874 0.42968 0.89098 0.14675 0.51575 0.85674 -0.00233 0.59682 0.78957 -0.14275 0.66979 0.69207 -0.26913 -0.86603 -0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 -0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 0.00000 -0.50000 -0.86603 0.00000 -0.50000</float_array>
+					<technique_common>
+						<accessor count="64" source="#Cone_003-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Cone_003-Vertex">
+					<input semantic="POSITION" source="#Cone_003-Position"/>
+				</vertices>
+				<triangles count="64">
+					<input offset="0" semantic="VERTEX" source="#Cone_003-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#Cone_003-Normals"/>
+					<p>1 0 0 0 32 0 32 1 2 1 1 1 32 2 3 2 2 2 32 3 4 3 3 3 32 4 5 4 4 4 32 5 6 5 5 5 32 6 7 6 6 6 32 7 8 7 7 7 32 8 9 8 8 8 32 9 10 9 9 9 32 10 11 10 10 10 32 11 12 11 11 11 32 12 13 12 12 12 32 13 14 13 13 13 32 14 15 14 14 14 32 15 16 15 15 15 32 16 17 16 16 16 32 17 18 17 17 17 32 18 19 18 18 18 32 19 20 19 19 19 32 20 21 20 20 20 32 21 22 21 21 21 32 22 23 22 22 22 32 23 24 23 23 23 32 24 25 24 24 24 32 25 26 25 25 25 32 26 27 26 26 26 32 27 28 27 27 27 32 28 29 28 28 28 32 29 30 29 29 29 32 30 31 30 30 30 32 31 0 31 31 31 33 32 0 32 1 32 33 33 1 33 2 33 33 34 2 34 3 34 33 35 3 35 4 35 33 36 4 36 5 36 33 37 5 37 6 37 33 38 6 38 7 38 33 39 7 39 8 39 33 40 8 40 9 40 33 41 9 41 10 41 33 42 10 42 11 42 33 43 11 43 12 43 33 44 12 44 13 44 33 45 13 45 14 45 33 46 14 46 15 46 33 47 15 47 16 47 33 48 16 48 17 48 33 49 17 49 18 49 33 50 18 50 19 50 33 51 19 51 20 51 33 52 20 52 21 52 33 53 21 53 22 53 33 54 22 54 23 54 33 55 23 55 24 55 33 56 24 56 25 56 33 57 25 57 26 57 33 58 26 58 27 58 33 59 27 59 28 59 33 60 28 60 29 60 33 61 29 61 30 61 33 62 30 62 31 62 31 63 0 63 33 63</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node layer="L1" id="chassis" name="chassis">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<node layer="L1" id="turret" name="turret">
+					<translate sid="translate">9.25982 -0.43158 20.01093</translate>
+					<rotate sid="rotateZ">0 0 1 90.07983</rotate>
+					<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+					<rotate sid="rotateX">1 0 0 0.00000</rotate>
+					<scale sid="scale">1.00000 1.00000 1.00000</scale>
+					<node layer="L1" id="Cone" name="Cone">
+						<translate sid="translate">35.59015 0.43158 21.43886</translate>
+						<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+						<rotate sid="rotateY">0 1 0 0.00001</rotate>
+						<rotate sid="rotateX">1 0 0 0.00001</rotate>
+						<scale sid="scale">1.00000 1.00000 1.00000</scale>
+						<instance_geometry url="#Cone_003"/>
+					</node>
+					<instance_geometry url="#turret-Geometry">
+						<bind_material>
+							<technique_common>
+								<instance_material symbol="Material" target="#Material">
+									<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+								</instance_material>
+							</technique_common>
+						</bind_material>
+					</instance_geometry>
+				</node>
+				<instance_geometry url="#chassis-Geometry"/>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<library_physics_materials>
+		<physics_material id="Cone-PhysicsMaterial" name="Cone-PhysicsMaterial">
+			<technique_common>
+				<dynamic_friction>0</dynamic_friction>
+				<restitution>0</restitution>
+				<static_friction>0</static_friction>
+			</technique_common>
+		</physics_material>
+		<physics_material id="turret-PhysicsMaterial" name="turret-PhysicsMaterial">
+			<technique_common>
+				<dynamic_friction>0</dynamic_friction>
+				<restitution>0</restitution>
+				<static_friction>0</static_friction>
+			</technique_common>
+		</physics_material>
+		<physics_material id="chassis-PhysicsMaterial" name="chassis-PhysicsMaterial">
+			<technique_common>
+				<dynamic_friction>0.5</dynamic_friction>
+				<restitution>0.0</restitution>
+				<static_friction>0.5</static_friction>
+			</technique_common>
+		</physics_material>
+	</library_physics_materials>
+	<library_physics_models>
+		<physics_model id="Scene-PhysicsModel" name="Scene-PhysicsModel">
+			<rigid_body name="Cone-RigidBody" sid="Cone-RigidBody">
+				<technique_common>
+					<dynamic>false</dynamic>
+					<mass>0</mass>
+					<instance_physics_material url="#Cone-PhysicsMaterial"/>
+					<shape>
+						<instance_geometry url="#Cone_003"/>
+					</shape>
+				</technique_common>
+			</rigid_body>
+			<rigid_body name="turret-RigidBody" sid="turret-RigidBody">
+				<technique_common>
+					<dynamic>false</dynamic>
+					<mass>0</mass>
+					<instance_physics_material url="#turret-PhysicsMaterial"/>
+					<shape>
+						<instance_geometry url="#turret-Geometry"/>
+					</shape>
+				</technique_common>
+			</rigid_body>
+			<rigid_body name="chassis-RigidBody" sid="chassis-RigidBody">
+				<technique_common>
+					<dynamic>false</dynamic>
+					<mass>0</mass>
+					<instance_physics_material url="#chassis-PhysicsMaterial"/>
+					<shape>
+						<instance_geometry url="#chassis-Geometry"/>
+					</shape>
+				</technique_common>
+			</rigid_body>
+		</physics_model>
+	</library_physics_models>
+	<library_physics_scenes>
+		<physics_scene id="Scene-Physics" name="Scene-Physics">
+			<instance_physics_model url="#Scene-PhysicsModel">
+				<instance_rigid_body body="Cone-RigidBody" target="#Cone"/>
+				<instance_rigid_body body="turret-RigidBody" target="#turret"/>
+				<instance_rigid_body body="chassis-RigidBody" target="#chassis"/>
+			</instance_physics_model>
+		</physics_scene>
+	</library_physics_scenes>
+	<scene>
+		<instance_physics_scene url="#Scene-Physics"/>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

@@ -1,0 +1,55 @@
+[MEDIUM_EXPLOSION_FLASH]
+{
+	usedefaultexplosions=1;
+	[GROUNDFLASH]
+	{
+		flashsize=68;
+		flashalpha=2.15;
+		circlegrowth=6;
+		circlealpha=1;
+		ttl=6;
+		color=1,0.9,0.6;
+	}
+}
+
+[FLASHSMALLUNITEX]
+{
+	usedefaultexplosions=1;
+	[GROUNDFLASH]
+	{
+		flashsize=60;
+		flashalpha=2;
+		circlegrowth=5;
+		circlealpha=1;
+		ttl=5;
+		color=1,0.9,0.6;
+	}
+}
+
+[FLASHMEDIUMUNITEX]
+{
+	usedefaultexplosions=1;
+	[GROUNDFLASH]
+	{
+		flashsize=64;
+		flashalpha=2.075;
+		circlegrowth=5;
+		circlealpha=1;
+		ttl=5;
+		color=1,0.9,0.6;
+	}
+}
+
+[FLASHBIGUNITEX]
+{
+	usedefaultexplosions=1;
+	[GROUNDFLASH]
+	{
+		flashsize=68;
+		flashalpha=2.15;
+		circlegrowth=6;
+		circlealpha=1;
+		ttl=6;
+		color=1,0.9,0.6;
+	}
+}

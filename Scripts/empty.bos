@@ -1,0 +1,9 @@
+#define TA // Required
+
+#include "sfxtype.h"
+#include "exptype.h"
+
+Create() // Required
+{
+	return (0);
+}
